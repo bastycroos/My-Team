@@ -1,0 +1,10 @@
+<nav class="navbar bg-light">
+    <div class="container" *ngIf="isMenuVisible">
+        <a class="navbar-brand" routerLink="home">MY-TEAM</a>
+        <button type="button" class="btn btn-outline-danger" routerLink="create-list">Add-Name</button>
+        <button type="button" class="btn btn-outline-danger" routerLink="login">Login</button>
+    </div>
+</nav>
+   <!--- <app-login></app-login>-->
+<div class="d-flex justify-content-center">{{myDate | date:'medium'}}</div>
+<router-outlet></router-outlet>

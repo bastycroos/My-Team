@@ -1,0 +1,18 @@
+<div class="container" style="background-color: yellow ;">
+    <div class="row">
+        <div class="col-md-2">No</div>
+        <div class="col-md-3"> Name</div>
+        <div class="col-md-3">Address</div>
+        <div class="col-md-4">PhoneNumber</div>
+    </div>
+    <div class="row pt-3" *ngFor="let team of teamlist">
+        <!---- <div class="col-md-1 border border-primary">{{prt.id}}</div>-->
+        <div class="col-md-2 border border-primary">####</div>
+        <div class="col-md-3 border border-primary" routerLink="create-list/{{team.id}}">{{prt.name}}</div>
+        <div class="col-md-3 border border-primary">{{team.adders}}</div>
+        <div class="col-md-3 border border-primary">{{team.phoneNumber}}</div>
+        <div class="col-md-1 btn btn-danger btn-sm" (click)=" onDelete(team)">
+            Delete
+        </div>
+    </div>
+</div>
